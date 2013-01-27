@@ -25,10 +25,12 @@ to load it up
 to check if a bool-type switch is provided
 
     Arg0::Console.switch?('--is-arg')
+    Arg0::Console.switch?(['-isarg', '--is-arg']) # synonymous args
 
 returning array of (empty or) Value(s) provided after --my-arg at ARGV
 
     Arg0::Console.value_for('--my-arg')
+    Arg0::Console.value_for(['-myarg', '--my-arg']) # synonymous args
 
 ## Contributing
 

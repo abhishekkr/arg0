@@ -1,0 +1,13 @@
+##### v0.0.2
+
+multiple synoymous arguments to be fetched
+[+] Arg0::Console.switch? ['-s', '--start']
+[+] Arg0::Console.value_for ['-p', '--path']
+
+##### v0.0.1
+
+boolean if argument passed
+[+] Arg0::Console.switch? '-start'
+
+array for single or multiple same argument passed
+[+] Arg0::Console.value_for '-path'

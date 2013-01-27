@@ -7,13 +7,15 @@ end
 module Arg0
   module Console
     def self.switch?(switch_name)
-      ARGV.include? switch_name
+      ! [switch_name].flatten.select {|switch|
+        ARGV.include? switch
+      }.empty?
     end
 
     def self.value_for(switch_name)
       values = []
       ARGV.each_with_index {|arg, index|
-        if arg === switch_name
+        if [switch_name].flatten.include? arg
           values += [ARGV[index + 1]]
         end
       }
