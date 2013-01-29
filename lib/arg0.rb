@@ -1,5 +1,5 @@
 # arg0
-arg0_libs = File.join(File.dirname(File.expand_path __FILE__), 'ci-go-nfo', '*.rb')
+arg0_libs = File.join(File.dirname(File.expand_path __FILE__), 'arg0', '*.rb')
 Dir.glob(arg0_libs).each do |lib|
     require lib
 end
