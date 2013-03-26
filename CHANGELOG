@@ -1,5 +1,12 @@
 ##### v0.0.2
 
+feature updates, tests added
+[+] Arg0::Consoe.keyring # to fetch hash of all arguments (refer: README.md)
+[+] Arg0::Console.values # alias to value_for, returns array of available values
+[+] Arg0::Console.value  # singular to value_for, returns first available value or nil
+
+##### v0.0.2
+
 multiple synoymous arguments to be fetched
 [+] Arg0::Console.switch? ['-s', '--start']
 [+] Arg0::Console.value_for ['-p', '--path']

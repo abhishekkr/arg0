@@ -46,9 +46,9 @@ class TestArg0Console < Test::Unit::TestCase
   end
 
   def test_value
+    assert_equal Arg0::Console.value(['-l', '--log']), nil
     ARGV.push '--log', 'a0.log', '-src', File.dirname(__FILE__), '-v', '-l', 'a2.log'
-    log = Arg0::Console.value(['-l', '--log'])
-    assert_equal log, 'a0.log'
+    assert_equal Arg0::Console.value(['-l', '--log']), 'a0.log'
   end
 
   def test_keyring
